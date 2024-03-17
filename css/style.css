@@ -1,1 +1,52 @@
 @import url(variables.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-body);
+}
+
+header{
+    
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background: var(--color-menu);
+    align-items: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+      
+}
+.logo h1 {
+    color: var(--color-orange);
+}
+
+.logo h1:hover{
+    color: var(--color-white);
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-white);
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: var(--color-orange);
+}
+
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
+}
