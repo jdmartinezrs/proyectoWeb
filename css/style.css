@@ -26,7 +26,7 @@ header{
     position: sticky;
     top: 0;
     margin: 0;
-    z-index: 3;
+    z-index: 5;
       
 }
 .logo h1 {
@@ -137,8 +137,8 @@ button{
 
 
 .services img{
-    width: 340px;
-    height: 350px; 
+    width: 360px;
+    height: 345px; 
     position: relative; 
 }
 .services__pic {
@@ -249,7 +249,7 @@ button{
 
 .aboutus img{
     width: 340px;
-    height: 340px; 
+    height: 325px; 
     position: relative;
 
 }
@@ -383,6 +383,7 @@ button{
     font-size: 1.3125em; 
     padding-left: 35%;
     color: var(--color-orange);
+   
 }
 
 
@@ -433,22 +434,29 @@ button{
     color: var(--color-orange);
 }
 
+
+
 .servicios1{
     display: grid;
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(10,1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9,1fr);
     grid-template-areas:
 
     "."
+    "."
     "hed"
     "serti"
-   
+    "servic"
+    "enun"
+    "parr"
+    "parr"
+    "."
+    
     ;
 
     width: 100%;
-    height: 100vh;
+    height: 70vh;
 }
-
 .servicios1__head{
     display: flex;
     text-decoration: none;
@@ -464,10 +472,121 @@ button{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-     font-size: 2.125em; 
-     line-height: 38px;
+    font-size: 2.125em; 
+    line-height: 38px;
+    padding-left: 10%;
+    padding-right: 10%;
     color: var(--color-white);
     grid-area: serti;
     
+}
+.servicios1__pic{
+    display: flex;
+    justify-content: center;
+    grid-area: servic;
+    
+}
+.servicios1__pic img {
+    width: 240px;
+    height: 240px; 
+
+}
+.servicios1__high{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 15px;
+    font-size: 2.125em; 
+    line-height: 38px;
+    color: var(--color-orange);
+    grid-area: enun;
+}
+.servicios1__lp{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.3125em;
+    line-height: 25px;
+    color: var(--color-white);
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-area: parr;
+
+}
+
+.servicios2{
+
+     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+     grid-template-areas:
+    
+    "serpic2"
+    "serpic2"
+    "serpic2"
+    "high2"
+    "fo"
+    
+    ;
+    width: 100%;
+    height: 65vh;
+
+}
+
+.servicios2__img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    grid-area: serpic2;
+}
+.servicios2 img{
+    width: 240px;
+    height: 240px; 
+    
+}
+
+.servicios2__high{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.125em; 
+    line-height: 38px;
+    color: var(--color-orange);
+    grid-area: high2;
+
+}
+
+.servicios2__lp{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.3125em;
+    line-height: 25px;
+    color: var(--color-white);
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-area: fo;
+}
+
+.sercicios3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas:
+    "grap"
+    "grap"
+    "grap";
+}
+
+.servicios3__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: grap;
+}
+
+.servicios3 img{
+    width: 240px;
+    height: 240px; 
 
 }
