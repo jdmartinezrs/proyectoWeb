@@ -257,10 +257,8 @@ button{
 .foodmenu{
     display: grid;
     grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(7,1fr);
+    grid-template-rows: repeat(5,1fr);
     grid-template-areas:
-    
-
     
     "head"
     "foodti"
@@ -270,11 +268,7 @@ button{
     "imge"  */
     "imge2"
     "imge3"
-    
-    
-    
-    
-    
+
     ;
     width: 100%;
     height: 100vh;
@@ -354,7 +348,7 @@ button{
     align-items: center;
     grid-area: imge2;
    
-    /* background-size: cover;
+ /* background-size: cover;
     background-position: center;
     background-repeat: none; */
     background-color:var(--color-backg);
@@ -419,7 +413,7 @@ button{
 }
 
 .foodmenu__img3text{
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 10px;
 
 }
@@ -437,4 +431,43 @@ button{
     font-size: 1.3125em; 
     padding-left: 35%;
     color: var(--color-orange);
+}
+
+.servicios1{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-template-areas:
+
+    "."
+    "hed"
+    "serti"
+   
+    ;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.servicios1__head{
+    display: flex;
+    text-decoration: none;
+    font-style: regular;
+    justify-content: center;
+    align-items: center;
+    font-size:  1.3125em;
+    color: var(--color-orange);
+    grid-area: hed;
+}
+
+.servicios1__title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+     font-size: 2.125em; 
+     line-height: 38px;
+    color: var(--color-white);
+    grid-area: serti;
+    
+
 }
