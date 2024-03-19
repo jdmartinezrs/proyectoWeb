@@ -331,6 +331,7 @@ button{
         grid-column-start: 4;
         grid-column-end: 6;
         justify-content: flex-start;
+        padding-left: 0;
     }
 
     .aboutus__title{
@@ -374,10 +375,13 @@ button{
     "imge"  */
     "imge2"
     "imge3"
+    
+    
 
     ;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 1250px;
 }
 
 .foodmenu__head{
@@ -500,22 +504,22 @@ button{
     align-items: center;
     grid-area: imge3;
    
-    /* background-size: cover;
+    background-size: cover;
     background-position: center;
-    background-repeat: none; */
+    background-repeat: none; 
     background-color:var(--color-backg);
     margin-right: 15%;
     margin-left: 15%;
     margin-top: 5%;
-    padding-top: 25px;
-    /* margin-bottom: 15%; */
+    padding-top: 15px;
+    margin-bottom: 15%; 
     
 }
 
 .foodmenu__img3 img{
     width: 170px;
     height: 180px; 
-    /* position: relative; */
+     position: relative; 
 
 }
 
@@ -543,9 +547,9 @@ button{
 @media screen and (min-width:1024px){
     .foodmenu{
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
     align-items: baseline;
-   
+   height: 700px;
     }
 
     .foodmenu__head {
@@ -577,15 +581,27 @@ button{
         grid-column-end: 6;
     }
 
+    .foodmenu__img1,
+    .foodmenu__img2,
+    .foodmenu__img3{
+        display: flex;
+        justify-content: baseline;
+    }
+
+
     .foodmenu__img3{
         grid-row-start: 3;
         grid-column-start: 6;
         grid-column-end: 8;
-       padding-top: 17%;
+
+       
+       height: 394px;
+       /* margin-top: 20%;
+       margin-bottom: 50%; */
     }
     .foodmenu__img3 img{
         padding-top: 0;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
 
     .foodmenu__img3text{
@@ -786,6 +802,57 @@ button{
     padding-right: 50px;
     grid-area: raf;
 }
+
+@media screen and (min-width:1024px){
+
+    .servicios{
+    
+        
+        /* grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(4,1fr); */
+        /* align-items: baseline; */
+         width: 100vw;
+        height: auto; 
+    }
+    
+    .servicios1__head{
+       
+        grid-row-start: 1;
+        grid-column-start: 4;
+        grid-column-end: 5;  
+    
+    }
+
+    .servicios1__title{
+        grid-row-start: 1;
+
+
+    }
+    .servicios1{
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 4; 
+    }
+
+    .servicios2{
+        grid-row-start: 2;
+        grid-column-start: 4;
+        grid-column-end: 6;  
+    }
+
+    .servicios3{
+        grid-row-start: 2;
+        grid-column-start: 6;
+        grid-column-end: 8;  
+    } 
+
+
+
+
+
+    
+    }
+    
 
 .quality{
 
