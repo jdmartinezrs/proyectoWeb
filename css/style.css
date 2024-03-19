@@ -52,6 +52,12 @@ nav a:hover{
     color: var(--color-orange);
 }
 
+@media(max-width:800px){
+    header{
+        flex-direction: row;
+    }
+} 
+
 .services{
 
     display:grid;
@@ -97,6 +103,7 @@ nav a:hover{
     padding-right: 10%;
     line-height: 35px;
     color: var(--color-white);
+    text-align: center;
     /* background-color: blue; */
     
    
@@ -153,12 +160,56 @@ button{
     
 }
 
+@media screen and (min-width:1024px){
 
- @media(max-width:800px){
-    header{
-        flex-direction: row;
+    .services{
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(5,1fr);
+        height: 70vh;
     }
-} 
+
+    .services__title{
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        align-items: end;
+        justify-content: center;
+        padding-right: 20%;
+    }
+
+    .services__pic{
+        grid-row-start: 2;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        height: 400px;
+    }
+
+    .services__parrafo{
+        grid-row-start: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        align-items: center;
+        justify-content: start;
+        text-align: start;
+        
+    }
+
+    .services__button{
+        grid-row-start:4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        align-items: start;
+        justify-content: start;
+        padding-left: 10%;
+        height: 80%;
+        padding-top: 5%;
+    }
+
+}
+
+
+
+
 
 .aboutus{
     display: grid;
@@ -203,6 +254,7 @@ button{
     color: var(--color-white);
    /* grid-column: 2/4;  */
    grid-area: abot;
+   text-align: center;
    /* background: orangered; */
 
 
@@ -217,6 +269,7 @@ button{
     color: var(--color-white);
     padding-left: 50px;
     padding-right: 50px;
+    text-align: center;
 }
 
 .aboutus__button{
@@ -253,6 +306,57 @@ button{
     width: 340px;
     height: 315px; 
     position: relative;
+
+}
+@media screen and (min-width:1024px){
+
+    .aboutus{
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
+        height: 50vh;
+    }
+
+    .aboutus__img{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        justify-content: center; 
+        align-items: center;
+        padding-left: 20%;
+        padding-bottom: 20%;
+    }
+
+    .aboutus__head{
+        grid-row-start: 1;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        justify-content: flex-start;
+    }
+
+    .aboutus__title{
+        grid-row-start: 2;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        text-align: start;
+    }
+    .aboutus__parrafo{
+        grid-row-start: 3;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        text-align: start;
+        justify-content: start;
+        padding-left: 0;
+        
+
+    }
+    .aboutus__button{
+        grid-row-start:4;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        padding-left: 0;
+        justify-content: flex-start;
+        height: 85%;
+    }
 
 }
 
@@ -435,6 +539,66 @@ button{
     padding-left: 35%;
     color: var(--color-orange);
 }
+
+@media screen and (min-width:1024px){
+    .foodmenu{
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(5,1fr);
+    align-items: baseline;
+   
+    }
+
+    .foodmenu__head {
+        display: flex;
+        grid-row-start: 1;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        padding-top: 30%;
+        align-items: flex-end;
+        
+    }
+    .foodmenu__title{
+        grid-row-start: 2;
+        grid-column-start: 3;
+        grid-column-end: 7;
+
+    }
+
+    .foodmenu__img1{
+
+        grid-row-start: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .foodmenu__img2{ 
+        grid-row-start: 3;
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+
+    .foodmenu__img3{
+        grid-row-start: 3;
+        grid-column-start: 6;
+        grid-column-end: 8;
+       padding-top: 17%;
+    }
+    .foodmenu__img3 img{
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+
+    .foodmenu__img3text{
+        padding-top: 2px;
+        padding-bottom: 10px;
+    }
+
+
+    }
+    
+
+
+
 
 
 
