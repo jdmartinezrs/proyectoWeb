@@ -172,7 +172,7 @@ button{
     "pc"
     "pc"
     "pc"
-    "."
+    "pc"
     
     ;
 
@@ -211,7 +211,7 @@ button{
 .aboutus__parrafo{
 
     grid-area: aboutparra;
-    background: gery;
+    
     font-size: 1.3125em;
     line-height: 25px;
     color: var(--color-white);
@@ -244,12 +244,14 @@ button{
 .aboutus__img{
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
     grid-area: pc;
 }
 
 .aboutus img{
     width: 340px;
-    height: 325px; 
+    height: 315px; 
     position: relative;
 
 }
@@ -568,14 +570,20 @@ button{
     grid-area: fo;
 }
 
-.sercicios3{
+.servicios3{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
     grid-template-areas:
+    
     "grap"
-    "grap"
-    "grap";
+    "dell"
+    "raf"
+    "raf"
+    ;
+
+    width: 100%;
+    height: 50vh;
 }
 
 .servicios3__img{
@@ -590,3 +598,118 @@ button{
     height: 240px; 
 
 }
+
+.servicios3__high{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.125em; 
+    line-height: 38px;
+    color: var(--color-orange);
+    grid-area:dell;
+}
+
+.servicios3__lp{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.3125em;
+    line-height: 25px;
+    color: var(--color-white);
+    padding-left: 50px;
+    padding-right: 50px;
+    grid-area: raf;
+}
+
+.quality{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    background: var(--color-backg);
+    margin-left: 7%;
+    margin-right: 7%;
+    grid-template-areas:
+    
+    "."
+    "qu"
+    "bt"
+    "bt"
+    "."
+     ;
+    
+    
+}
+
+.quality__title{
+
+    display: flex;
+    justify-content: center;
+    font-size: 2.125em; 
+    line-height: 38px;
+    color: var(--color-body);
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-area: qu;
+    height: 65px;
+}
+
+.quality__button{
+
+    display: flex;
+    grid-area:bt ;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    /* background-color: blueviolet; */
+}
+
+.quality button{
+
+    background-color: var(--color-orange);
+    font-size:  0.8125em;
+    width: 50%;
+    height: 45%;
+    border: none;
+    color: var(--color-white);  
+}
+
+.menulinks{
+
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,1fr);
+    background-color: aqua; 
+    width: 100%;
+    height: 250px;
+
+}
+
+.menulinks__information{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+}
+
+
+.menulinks__title{
+
+    font-size: 2.125em; 
+    line-height: 38px;
+    color: var(--color-white);
+}
+
+.menulinks__information p {
+    font-size: 1.3125em;
+    line-height: 25px;
+    color: var(--color-white);
+
+}
+
+
+
+
+    
+   
