@@ -177,7 +177,7 @@ button{
         grid-column-end: 4;
         align-items: end;
         justify-content: center;
-        padding-right: 20%;
+        padding-right: 40%;
     }
 
     .services__pic{
@@ -206,6 +206,7 @@ button{
         padding-left: 10%;
         height: 80%;
         padding-top: 5%;
+        
     }
 
 }
@@ -831,10 +832,13 @@ button{
 
 
     }
+    
+
     .servicios1{
         grid-row-start: 2;
         grid-column-start: 2;
         grid-column-end: 4; 
+        padding-bottom: 10%;
     }
 
     .servicios2{
@@ -844,6 +848,7 @@ button{
     }
 
     .servicios3{
+        padding-top: 4%;
         grid-row-start: 2;
         grid-column-start: 6;
         grid-column-end: 8;  
