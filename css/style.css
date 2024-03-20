@@ -1051,12 +1051,21 @@ height: 150px;
     padding-top: 20%;
 }
 
-.contactos{
+.contactos__icon{
     display: flex;
     color: var(--color-orange);
     justify-content: center;
    
 }
+
+@media screen and (min-width:1024px)
+{
+
+    footer{
+        display: flex;
+    }
+}
+
 
 
 
