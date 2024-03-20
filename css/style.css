@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #19-0303tcx;
+    background: grey;
 }
 
 .container{
@@ -79,16 +79,17 @@ body{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 3%;
     box-shadow: 0cap;
+    overflow: hidden;
+    
+   
+   
+    
     
   
 
 
 }
 
-.container__space h4{
-
-
-}
 
 .container__buttoms{
     display: flex;
@@ -130,17 +131,56 @@ body{
 }
 
 
+
 .containerspace__dad{
+    gap: 0 5px;
+    gap: 45 0 ;
+    height: 90%;
     display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    
+    
 }
 
 .containerspace__1{
-    width: 120px;
-
+    height: 380px;
+    width:280px;
+    background: white;
 }
 .containerspace__1 img{
-    height: 180px;
+    height: 330px;
+    justify-content: center;
+
 }
+.containerspace__1 p{
+    color: aliceblue;
+   padding-left: 20px;
+   background: lightslategray;
+   font-size: 16px;
+   
+}
+.containerspace__1a{
+    display: flex;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
 
 .containerspace__3{
     width: 120px;
