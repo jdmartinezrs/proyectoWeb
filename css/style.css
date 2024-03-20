@@ -85,3 +85,34 @@
 
 }
 
+.container__butodo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__butabri{
+    display: flex;
+    justify-content: start;
+   
+
+}
+
+.container__butcami{
+    display: flex;
+    justify-content: start;
+    
+}
+
+.container__butpan{
+    display: flex;
+    justify-content: start;
+
+}
+
+.container__aditional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
