@@ -162,11 +162,14 @@ button{
 
 @media screen and (min-width:1024px){
 
-    .services{
-        grid-template-columns: repeat(6,1fr);
+    .servicios__container{
+        /* grid-template-columns: repeat(6,1fr);
         grid-template-rows: repeat(5,1fr);
-        height: 70vh;
+        height: 70vh; */
+        display: flex;
+
     }
+
 
     .services__title{
         grid-row-start: 2;
@@ -1035,7 +1038,21 @@ height: 150px;
 
 .contactos__info{
     padding-top: 20%;
+
+
 }
+
+.contactos__info{
+    padding-top: 20%;
+}
+
+.contactos{
+    display: flex;
+    color: var(--color-orange);
+    justify-content: center;
+   
+}
+
 
 
 
