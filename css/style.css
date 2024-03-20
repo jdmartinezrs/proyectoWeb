@@ -1,1 +1,87 @@
 @import url(variables.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-gap: 8px;
+    grid-template-areas:
+    "marca marca . . . . . . . ."
+    "marca marca canva canva canva canva canva canva canva ."
+    "boton boton canva canva canva canva canva canva canva ."
+    "boton boton canva canva canva canva canva canva canva ."
+    "boton boton canva canva canva canva canva canva canva ."
+    ". . canva canva canva canva canva canva canva ."
+    "added added canva canva canva canva canva canva canva ."
+    "added added canva canva canva canva canva canva canva ."
+    ". . canva canva canva canva canva canva canva ."
+    ". . . . . . . . . .";
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.container__brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: marca;
+    background: green;
+}
+
+
+.container__buttoms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    grid-area: boton;
+    background: red;
+   
+    
+}
+
+/* .container__button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: buto1;
+    background: blue;
+}
+
+.container__button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: buto2;
+    background: rgb(255, 17, 0);
+} */
+
+.container__aditional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: added ;
+    background: yellow;
+
+}
+
+.container__space{
+    grid-area: canva;
+    border-radius: 5%;
+    background: blue;
+
+
+}
+
