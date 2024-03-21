@@ -9,7 +9,7 @@
 }
 
 body{
-    background: var(--color-white)
+    background: white;
 }
 
 .container{
@@ -75,24 +75,19 @@ body{
     grid-area: canva;
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
-    background: var(--color-sky);
+    background: rgb(11, 196, 210); 
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 3%;
     box-shadow: 0cap;
     overflow: hidden;
-
-}
-
-.container__space:hover{
+    
    
-    background-image: url(../storage/back3.jpg);
-    background-size: cover;
-    background-repeat: none;
    
-}
+    
+    
+  
 
-.container__space h3{
-    color: var(--color-white);
+
 }
 
 
@@ -141,29 +136,40 @@ body{
     gap: 0 5px;
     gap: 45 0 ;
     height: 90%;
-    display: flex;
+    gap:30%;
+    justify-content: space-around 20px;
+   display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
+    /* background: red; */
     
     
 }
 
 .containerspace__1{
-    height: 380px;
+    margin-top: 10px;
+    height: 300px;
     width:1000px;
-    background: var(--color-white);
-}
-.containerspace__1 img{
-    height: 50px;
-    justify-content: center;
-    width: 100%;
-    /* object-fit: cover; */
+    background: white;
+    
+    /* grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 8px;
+    row-gap: 100px; */
 
+    
 }
+
+
+
+
+
+
+
 .containerspace__1 p{
-    color: var(--color-white);
+    color: aliceblue;
    padding-left: 20px;
-   background: var(--color-grey);
+   background: lightslategray;
    font-size: 16px;
    
 }
@@ -172,13 +178,7 @@ body{
     padding-right: 10px;
 }
 
-.containerspace__1 button{
-    border: none;
-    background-color:var(--color-sky);
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--color-black);
-}   
+
 
 
 
@@ -230,4 +230,33 @@ body{
 .container__aditional:last-child{
     padding-left: 50%;
 }
+
+.container__spacecar{
+    background: chocolate;
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: span 1; 
+ 
+    
+ }
+ 
+ .container__spacecar1{
+     background: chocolate;
+     grid-column-start: 4;
+     grid-column-end: 9;
+     grid-row-start: 4;
+     grid-row-end: span 1; 
+    
+  }
+ 
+  .container__spacecar2{
+     background: chocolate;
+     grid-column-start: 4;
+     grid-column-end: 9;
+     grid-row-start: 7;
+     grid-row-end: span 2; 
+    
+  }
+
 
