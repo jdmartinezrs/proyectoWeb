@@ -81,13 +81,19 @@ body{
     box-shadow: 0cap;
     overflow: hidden;
     
-   
-   
-    
-    
-  
 
 
+}
+
+.container__space:hover{
+   
+    background-image: url(../storage/back3.jpg);
+    background-size: cover;
+    background-repeat: none;
+   
+}
+.container__space h3{
+    color:var(--color-white)
 }
 
 
@@ -189,6 +195,12 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.comprar{
+    background-color: var(--color-grey);
+    display: flex;
+    justify-content: flex-end;
 }
 
 
