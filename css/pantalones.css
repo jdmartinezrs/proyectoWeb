@@ -9,7 +9,7 @@
 }
 
 body{
-    background: white;
+    background: grey;
 }
 
 .container{
@@ -81,12 +81,6 @@ body{
     box-shadow: 0cap;
     overflow: hidden;
     
-   
-   
-    
-    
-  
-
 
 }
 
@@ -113,11 +107,13 @@ body{
     
     
     
+    
 
 }
 
 .container__list:nth-child(2){
     display: flex;
+    
 
 }
 
@@ -151,12 +147,13 @@ body{
 .containerspace__1 img{
     height: 330px;
     justify-content: center;
-    width: 100%;
-    object-fit: cover;
+    /* width: 100%; */
+    /* object-fit: cover; */
+   
 
 }
 .containerspace__1 p{
-    color: aliceblue;
+   color: aliceblue;
    padding-left: 20px;
    background: lightslategray;
    font-size: 16px;
