@@ -150,14 +150,14 @@ body{
 
 .containerspace__1{
     height: 380px;
-    width:280px;
+    width:1000px;
     background: var(--color-white);
 }
 .containerspace__1 img{
-    height: 330px;
+    height: 50px;
     justify-content: center;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 
 }
 .containerspace__1 p{
