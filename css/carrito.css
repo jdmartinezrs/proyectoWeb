@@ -42,7 +42,7 @@ body{
     justify-content: center;
     align-items: center;
     grid-area: marca;
-    /* background: green; */
+   
 }
 
 
@@ -133,9 +133,8 @@ body{
 
 
 .containerspace__dad{
-    gap: 0 5px;
-    gap: 45 0 ;
-    height: 90%;
+    
+    height: 70%;
     gap:30%;
     justify-content: space-around 20px;
    display: flex;
@@ -147,15 +146,17 @@ body{
 }
 
 .containerspace__1{
+    
     margin-top: 10px;
     height: 300px;
     width:1000px;
     background: white;
-    
-    /* grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 10px;
+
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3,1fr);
     grid-gap: 8px;
-    row-gap: 100px; */
+    row-gap: 100px; 
 
     
 }
@@ -178,6 +179,17 @@ body{
     padding-right: 10px;
 }
 
+.containerspace__1 img{
+    height:300px ;
+    
+}
+
+.containerspace__inf{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
 
 
