@@ -81,12 +81,6 @@ body{
     box-shadow: 0cap;
     overflow: hidden;
     
-   
-   
-    
-    
-  
-
 
 }
 
@@ -153,10 +147,11 @@ body{
     justify-content: center;
     width: 100%;
     object-fit: cover;
+   
 
 }
 .containerspace__1 p{
-    color: aliceblue;
+   color: aliceblue;
    padding-left: 20px;
    background: lightslategray;
    font-size: 16px;
