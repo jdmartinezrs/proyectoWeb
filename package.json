@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "ecommer": "json-server src/db/Products.json -p 5501"
+    "ecommer": "json-server src/db/ecommer.json -p 5501"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.0",

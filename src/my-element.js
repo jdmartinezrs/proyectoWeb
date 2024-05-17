@@ -1,4 +1,6 @@
+import { AllProducts } from "./allProducts";
 import { LitElement, html, css } from "lit";
+
 
 class MyElement extends LitElement{
     constructor(){
@@ -330,6 +332,7 @@ main {
 
     .contenedor-productos {
         grid-template-columns: 1fr 1fr;
+        
     }
 
     .header-mobile {
@@ -432,7 +435,7 @@ render(){
 <main>
 <h3 class="titulo-principal" id="titulo-principal">Todos los productos</h3>
 <div id="contenedor-productos" class="contenedor-productos">
-<my-products></my-products>
+<all-products></all-products>
 </div>
 </main>
 </div>
