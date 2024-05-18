@@ -23,6 +23,7 @@ export class AllProducts extends LitElement {
             const pantalonProducts = await getPantalonInfo();
 
             this.products = [...abrigoProducts, ...camisetaProducts, ...pantalonProducts];
+           
 
             // Asegúrate de que la propiedad se actualice después de cargar los productos
             this.requestUpdate();
@@ -96,3 +97,4 @@ export class AllProducts extends LitElement {
 }
 
 customElements.define("all-products", AllProducts);
+

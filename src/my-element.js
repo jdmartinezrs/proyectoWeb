@@ -2,6 +2,7 @@ import { AllProducts } from "./allProducts";
 import { LitElement, html, css } from "lit";
 
 
+
 class MyElement extends LitElement{
     constructor(){
         super();
@@ -423,7 +424,7 @@ render(){
     </li>
     <li>
         <a class="boton-menu boton-carrito" href="./views/carrito.html">
-            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">10</span>
         </a>
     </li>
 </ul>

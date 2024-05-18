@@ -48,4 +48,3 @@ export const getPantalonInfo =async()=>{
 }
 
 
-
