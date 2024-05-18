@@ -1,12 +1,18 @@
-export const getAllAbrigoInformation = async () => {
-    let res = await fetch("http://localhost:5501/abrigo");
-    let data = await res.json();
-    return data.map(val => ({
-        Name: val.nombre,
-        Price: val.precio
-    }));
-}
+export const getAbrigoInfo =async()=>{
+    let res = await fetch("http://localhost:5501/abrigo")
+    let data = await res.json()
+    let dataUpdate = []
+    data.forEach(val =>{
+        dataUpdate.push({
+            name: val.nombre,
+            image: val.imagen,
+            price: val.precio,
+            id: val.id
 
+        })
+    })
+    return dataUpdate
+}
 
 
 

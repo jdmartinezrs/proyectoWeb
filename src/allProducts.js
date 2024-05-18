@@ -1,83 +1,91 @@
-import { getAllAbrigoInformation } from "./consultas";
+import { getAbrigoInfo  } from "./consultas";
 
 import { LitElement,html,css } from "lit";
 export class AllProducts extends LitElement{
-    constructor(){
-        super();
-    }
+    static properties = {
+        products: {type: Array}
+
+    };
+  
+    
 static styles = css `
 
-
-
-.containerProductos{
-
-    display:flex;
-    height:300px;
-    width: 250px;
-    background: pink;
-    border-box: 10%;
-    border-radius:10px;
-    align-items: flex-end;
-    flex-direction: row;
+:host{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
-
-.containerProductos__names{
-
-    
-    height:70px;
+.card {
+    border-radius: 20px;
     width: 250px;
-    background: var(--clr-main-light);
-    border-radius:10px;
-    display:flex;
-    flex-direction: row;
-}
-
-.containerProductos__button{
-
-    appearance: none;
-    height:70px;
-    width: 500px;
-    border-radius:10px;
-    display:flex;
-    justify-content: flex-end;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:  var(--clr-main-light);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    // background:blue;
-    margin-left:70%;
-    margin-button:5px
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .product-name {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .product-price {
+    color: var(--clr-white);
+    font-size: 16px;
+  }
+
+  .add-button {
+    background-color:  var(--clr-main);   
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+`;
+constructor() {
+    super();
+    this.products= [];
+}
+async connectedCallback(){
+    super.connectedCallback();
+    this.products = await getAbrigoInfo();
 }
 
-button{
-    background: withe;
-    border-radius:none;
-}
-
-
-
-
-
-
-
-
-`
 render(){
     return html`
     
     
-<div class="containerProductos">
-<div class="containerProductos__names">
-<div class="containerProductos__button"><button>Agregar</button></div>
-</div>
-</div>
     
-    
-    
-    
-    
-    
-    
-    
+    ${this.products.map(product=> html`
+    <div class="card">
+      <div class="product-image">
+        <!-- Aquí debes colocar la imagen del producto -->
+        <img src="${product.image}">
+      </div>
+      <p class="product-name"><small>${product.name}</small></p>
+      
+      <p class="product-price">$${product.price}</p>
+      
+      <p class="product-price">Id:${product.id}</p>
+      <button class="add-button">Agregar</button>
+    </div>
+ 
+     `)}
     `
-
+    ;
 
 }
 }
