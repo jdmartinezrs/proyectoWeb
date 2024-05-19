@@ -4,6 +4,7 @@ import { AllButtons } from "./buttons";
 import { AllCamisetaGotten } from "./my-camiseta"; 
 import { AllPantalonGotten } from "./my-pantalon";
 import { AllAbrigoGotten } from "./my-abrigo";
+import { changeToAbrigos } from "./consultas";
 
 
 class MyElement extends LitElement{
@@ -306,7 +307,7 @@ main {
 `
 render(){
     return html`
-
+    
     <div class="wrapper">
     <header class="header-mobile">
         <h1 class="logo">CampusShop</h1>
@@ -318,7 +319,7 @@ render(){
 <main>
 <h3 class="titulo-principal" id="titulo-principal">Todos los productos</h3>
 <div id="contenedor-productos" class="contenedor-productos">
-<all-abrigogotten></all-abrigogotten>
+<all-products></all-products>
 </div>
 </main>
 </div>
@@ -330,3 +331,4 @@ render(){
 }
 
 customElements.define("my-element", MyElement)
+

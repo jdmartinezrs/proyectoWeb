@@ -3,6 +3,7 @@ import { AllAbrigoGotten } from "./my-abrigo";
 import { AllCamisetaGotten } from "./my-camiseta";
 import { AllPantalonGotten } from "./my-pantalon";
 import { AllProducts } from "./allProducts";
+import { changeToAbrigos } from "./consultas";
 
 export class AllButtons extends LitElement{
     constructor(){
@@ -129,7 +130,13 @@ export class AllButtons extends LitElement{
             <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
         </li>
         <li>
-            <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Abrigos</button>
+       
+        <button id="abrigos" class="boton-menu boton-categoria" @click=${changeToAbrigos}>
+        <i class="bi bi-hand-index-thumb"></i> Abrigos
+    </button>
+
+   
+
         </li>
         <li>
             <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Camisetas</button>

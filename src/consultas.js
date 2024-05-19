@@ -48,3 +48,8 @@ export const getPantalonInfo =async()=>{
 }
 
 
+export const changeToAbrigos = async() => {
+    let sectionProducts =  document.querySelector("#contenedor-productos")
+    sectionProducts.innerHTML = "<all-abrigogotten></all-abrigogotten>"
+}
+
