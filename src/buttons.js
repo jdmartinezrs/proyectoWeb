@@ -1,5 +1,8 @@
 import {LitElement,html,css} from "lit";
 import { AllAbrigoGotten } from "./my-abrigo";
+import { AllCamisetaGotten } from "./my-camiseta";
+import { AllPantalonGotten } from "./my-pantalon";
+import { AllProducts } from "./allProducts";
 
 export class AllButtons extends LitElement{
     constructor(){
@@ -156,3 +159,9 @@ export class AllButtons extends LitElement{
 }
 
 customElements.define("my-buttons", AllButtons)
+
+
+// botonTodos.addEventListener('click', () => mostrarComponente('all-products'));
+// botonAbrigos.addEventListener('click', () => mostrarComponente('all-abrigogotten'));
+// botonCamisetas.addEventListener('click', () => mostrarComponente('all-camisetagotten'));
+// botonPantalones.addEventListener('click', () => mostrarComponente('all-pantalongotten'));

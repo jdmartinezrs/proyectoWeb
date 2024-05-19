@@ -1,6 +1,9 @@
 import { AllProducts } from "./allProducts";
 import { LitElement, html, css } from "lit";
 import { AllButtons } from "./buttons";
+import { AllCamisetaGotten } from "./my-camiseta"; 
+import { AllPantalonGotten } from "./my-pantalon";
+import { AllAbrigoGotten } from "./my-abrigo";
 
 
 class MyElement extends LitElement{
@@ -315,7 +318,7 @@ render(){
 <main>
 <h3 class="titulo-principal" id="titulo-principal">Todos los productos</h3>
 <div id="contenedor-productos" class="contenedor-productos">
-<all-products></all-products>
+<all-abrigogotten></all-abrigogotten>
 </div>
 </main>
 </div>
