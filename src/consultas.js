@@ -53,3 +53,7 @@ export const changeToAbrigos = async() => {
     sectionProducts.innerHTML = "<all-abrigogotten></all-abrigogotten>"
 }
 
+export const changeToPantalon = async() => {
+    let sectionProducts =  document.querySelector("#contenedor-productos")
+    sectionProducts.innerHTML = "<all-pantalongotten></all-pantalongotten>"
+}
