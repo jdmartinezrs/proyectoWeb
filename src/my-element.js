@@ -1,4 +1,5 @@
 import { AllProducts } from "./allProducts";
+import "./my-pages.js"
 import { LitElement, html, css } from "lit";
 
 
@@ -346,17 +347,17 @@ render(){
     </header>
     <nav>
     <ul class="menu">
-    <li>
-        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+    <li id="">
+        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> todos los productos</button>
     </li>
     <li>
-        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Abrigos</button>
+        <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> abrigos</button>
     </li>
     <li>
-        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Camisetas</button>
+        <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> camisetas</button>
     </li>
     <li>
-        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pantalones</button>
+        <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> pantalones</button>
     </li>
     <li>
         <a class="boton-menu boton-carrito" href="./views/carrito.html">
@@ -373,15 +374,55 @@ render(){
 <main>
 <h3 class="titulo-principal" id="titulo-principal">Todos los productos</h3>
 <div id="contenedor-productos" class="contenedor-productos">
-<all-products></all-products>
+<my-component id="miComponente"></my-component>
 </div>
 </main>
 </div>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
  `;
 }
-  
+
+static get properties() {
+    return {
+      numProductosEnCarrito: { type: Number }
+    };
+  }
+  connectedCallback() {
+    super.connectedCallback();
+
+    this.updateComplete.then(() => {
+
+      const botonesDiv2 = this.shadowRoot.querySelectorAll('.boton-menu boton-categoria');
+      const miComponente = this.shadowRoot.querySelector('#miComponente');
+
+      const updateSelectedOption = (opcion) => {
+        botonesDiv2.forEach(btn => btn.classList.remove('opcion-seleccionada'));
+        opcion.classList.add('opcion-seleccionada');
+        miComponente.opcionSeleccionada = opcion.querySelector('p').textContent.toLowerCase();
+
+        const textoOpcion = opcion.querySelector('p').textContent;
+        const textoFormateado = textoOpcion.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+
+        const div5_p = this.shadowRoot.querySelector('.div5_p');
+        div5_p.textContent = textoFormateado;
+      };
+
+      const btnTodosProductos = this.shadowRoot.querySelector('#btnCarrito');
+      updateSelectedOption(btnTodosProductos);
+
+      botonesDiv2.forEach(boton => {
+        boton.addEventListener('click', () => {
+          updateSelectedOption(boton);
+        });
+      });
+    });
+  }
+
+
 }
+
+
+
 
 
 customElements.define("my-element", MyElement)

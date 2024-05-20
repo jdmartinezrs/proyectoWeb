@@ -22,19 +22,19 @@ class MiComponente extends LitElement{
     return html`
     
     <div class='magic'>
-    ${this.opcionSeleccionada === 'Todos los productos'
+    ${this.opcionSeleccionada === 'todos los productos'
     ? html`<all-products></all-products>`
     : ''}
-  ${this.opcionSeleccionada === 'Abrigos'
+  ${this.opcionSeleccionada === 'abrigos'
     ? html`<all-abrigogotten></all-abrigogotten>`
     : ''}
-  ${this.opcionSeleccionada === 'Camisetas'
+  ${this.opcionSeleccionada === 'camisetas'
     ? html`<all-camisetagotten></all-camisetagotten>`
     : ''}
-  ${this.opcionSeleccionada === 'Pantalones'
+  ${this.opcionSeleccionada === 'pantalones'
     ? html`<all-pantalongotten></all-pantalongotten>`
     : ''}
-  ${this.opcionSeleccionada === 'Carrito'
+  ${this.opcionSeleccionada === 'carrito'
     ? html`<my-cart></my-cart>`
     : ''}
 </div>
