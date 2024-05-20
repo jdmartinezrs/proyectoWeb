@@ -154,8 +154,11 @@ export class AllButtons extends LitElement{
     <footer>
     <p class="texto-footer">© 2024 CampusLands</p>
     </footer>
+
     </aside>
      
+
+    
         
         
         `
@@ -165,10 +168,16 @@ export class AllButtons extends LitElement{
 
 }
 
+
+
 customElements.define("my-buttons", AllButtons)
+
+
+      
 
 
 // botonTodos.addEventListener('click', () => mostrarComponente('all-products'));
 // botonAbrigos.addEventListener('click', () => mostrarComponente('all-abrigogotten'));
 // botonCamisetas.addEventListener('click', () => mostrarComponente('all-camisetagotten'));
 // botonPantalones.addEventListener('click', () => mostrarComponente('all-pantalongotten'));
+

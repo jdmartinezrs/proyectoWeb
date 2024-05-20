@@ -4,6 +4,7 @@ import { AllButtons } from "./buttons";
 import { AllCamisetaGotten } from "./my-camiseta"; 
 import { AllPantalonGotten } from "./my-pantalon";
 import { AllAbrigoGotten } from "./my-abrigo";
+
 import { changeToAbrigos } from "./consultas";
 
 
@@ -326,9 +327,48 @@ render(){
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     
     
-    `
+    `;
 }
+
+static get properties() {
+    return {
+      numProductosEnCarrito: { type: Number }
+    };
+  }
+  connectedCallback() {
+    super.connectedCallback();
+    
+    this.updateComplete.then(() => {
+      
+      const botonesDiv2 = this.shadowRoot.querySelectorAll('.boton-menu boton-categoria');
+      const miComponente = this.shadowRoot.querySelector('#miComponente');
+  
+      const updateSelectedOption = (opcion) => {
+        botonesDiv2.forEach(btn => btn.classList.remove('opcion-seleccionada'));
+        opcion.classList.add('opcion-seleccionada');
+        miComponente.opcionSeleccionada = opcion.querySelector('p').textContent.toLowerCase();
+        
+        const textoOpcion = opcion.querySelector('p').textContent;
+        const textoFormateado = textoOpcion.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+        
+        const div5_p = this.shadowRoot.querySelector('.div5_p');
+        div5_p.textContent = textoFormateado;
+      };
+      
+      const btnTodosProductos = this.shadowRoot.querySelector('#btnCarrito');
+      updateSelectedOption(btnTodosProductos);
+  
+      botonesDiv2.forEach(boton => {
+        boton.addEventListener('click', () => {
+          updateSelectedOption(boton);
+        });
+      });
+    });
+  }
+      
+      
 }
+
 
 customElements.define("my-element", MyElement)
 
