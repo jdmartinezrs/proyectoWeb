@@ -34,6 +34,7 @@ export class AllProducts extends LitElement {
 
     static styles = css `
         :host {
+            padding-left:40px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;

@@ -5,6 +5,8 @@
   --clr-white: #ececec;
   --clr-gray: #e2e2e2;
   --clr-red: #961818;
+  --clr-gradient: linear-gradient(80deg,var(--clr-main-light), 
+  var(--clr-main-light),var(--clr-main));
 }
 * {
   margin: 0;

@@ -12,7 +12,7 @@ static styles = css`
 :host {
   width: 100%;
   height: 100vh;
-  background:  var(--clr-main);
+  background:  var(--clr-gradient);
   color: var(--clr-white);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   overflow:hidden;
@@ -32,7 +32,8 @@ static styles = css`
   grid-area: logo;
 }
 .div1_h1 {
-  font-size: 2.5em;
+  padding-top: 40px;
+  font-size: 33px;
 }
 #toggleMenu {
   display: none;
@@ -48,7 +49,7 @@ static styles = css`
 .div2_ul {
   height: 100%;
   width:100%;
-  font-size: 1.5em;
+  font-size: 21px;
   display: flex;
   flex-direction: column;
   padding-inline-start: 0px;
@@ -112,15 +113,16 @@ button{
   grid-area: derechos;
 }
 .div4_p {
-  font-size: 1.5em;
+  font-size: 13px;
 }
 .div5 {
-  width: 100%;
-  height: 95%;
+
+  width: 97%;
+  height: 85%;
   grid-area: img;
-  background: var(--clr-white);
+  background:var(--clr-gray);
   border-radius: 3em;
-  margin-top: 1em;
+  margin-top: 65px;
   margin-left: -1em;
   overflow-y: scroll;
  
@@ -128,12 +130,12 @@ button{
 .div5_p {
   width: 100%;
   height: 10vh;
-  font-size: 35px;
+  font-size: 21px;
   padding: 0.5em 0 0em 0.5em;
   display: flex;
   margin-block-start: 0em;
   margin-block-end: 0em;
- color: var(--clr-main );
+ color: var( --clr-main);
 }
 .div5_contenedor {
   width: 100%;
@@ -184,16 +186,18 @@ button{
   }
   .div4_p {
     padding-top: 2em;
+   
   }
   .div5 {
     width: 95vw;
     height: 100vh;
     margin-top: 0.5em;
-    padding: 0;
+    
+    padding: 50;
   }
   .div5_p {
     font-size: 32px;
-    padding: 1em 0 1.5em 1em;
+    padding: 5em 0 4.5em 5em;
     display: flex;
    
   }
@@ -250,7 +254,7 @@ render(){
         />
       </head>
       <div class="div1">
-        <h1 class="div1_h1">CampusShop</h1>
+        <h3 class="div1_h1">CampusShop</h3>
         <br />
         <button id="toggleMenu">Menu</button>
       </div>
@@ -302,10 +306,10 @@ render(){
         </li>
       </div>
       <div class="div4">
-        <p class="div4_p">© 2024</p>
+        <p class="div4_p">© davidR10 - 2024</p>
       </div>
       <div class="div5">
-        <p class="div5_p"></p>
+        <h4 class="div5_p"></h4>
         <my-component id="miComponente"></my-component>
       </div>
  `;
