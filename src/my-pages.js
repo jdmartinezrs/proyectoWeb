@@ -3,6 +3,7 @@ import"./allProducts.js"
 import"./my-abrigo.js"
 import"./my-pantalon.js"
 import"./my-camiseta.js"
+import"./my-car.js"
 
 class MiComponente extends LitElement {
   static get properties() {
@@ -32,7 +33,7 @@ class MiComponente extends LitElement {
           ? html`<all-pantalongotten></all-pantalongotten>`
           : ''}
         ${this.opcionSeleccionada === 'carrito'
-          ? html`<my-cart></my-cart>`
+          ? html`<my-car></my-car>`
           : ''}
       </div>
     `;
