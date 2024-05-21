@@ -125,6 +125,8 @@ button{
   margin-top: 65px;
   margin-left: -1em;
   overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 20px;
  
 }
 .div5_p {
@@ -241,6 +243,9 @@ button{
     width: 14px;
     height: 14px;
   }
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
 }
 `;
 
