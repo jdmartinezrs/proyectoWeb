@@ -37,7 +37,7 @@ export class AllProducts extends LitElement {
             padding-left:40px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
+           
         }
 
         .card {
@@ -49,6 +49,7 @@ export class AllProducts extends LitElement {
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap:130px;
         }
 
         .product-image img {
