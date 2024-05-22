@@ -1,6 +1,6 @@
 export const dataAbrigos = async () => {
     try {
-      let res = await fetch("http://localhost:5501/abrigo");
+      let res = await fetch("http://172.16.101.146:5999/abrigo");
       let data = await res.json();
       let dataUpdate = [];
       data.forEach(val => {
@@ -21,7 +21,7 @@ export const dataAbrigos = async () => {
   
   export const dataCamisetas = async () => {
     try {
-      let res = await fetch("http://localhost:5501/camiseta");
+      let res = await fetch("http://172.16.101.146:5999/camiseta");
       let data = await res.json();
       let dataUpdate = [];
       data.forEach(val => {
@@ -42,7 +42,7 @@ export const dataAbrigos = async () => {
   
   export const dataPantalones = async () => {
     try {    
-      let res = await fetch("http://localhost:5501/pantalon");
+      let res = await fetch("http://172.16.101.146:5999/pantalon");
       let data = await res.json();
       let dataUpdate = [];
       data.forEach(val => {
@@ -63,16 +63,16 @@ export const dataAbrigos = async () => {
   
   export const getCombinedData = async () => {
     try {
-      let ordersRes = await fetch("http://localhost:5501/carrito");
+      let ordersRes = await fetch("http://172.16.101.146:5999/carrito");
       let ordersData = await ordersRes.json();
   
-      let coatsRes = await fetch("http://localhost:5501/abrigo");
+      let coatsRes = await fetch("http://172.16.101.146:5999/abrigo");
       let coatsData = await coatsRes.json();
   
-      let shirtsRes = await fetch("http://localhost:5501/camiseta");
+      let shirtsRes = await fetch("http://172.16.101.146:5999/camiseta");
       let shirtsData = await shirtsRes.json();
   
-      let pantsRes = await fetch("http://localhost:5501/pantalon");
+      let pantsRes = await fetch("http://172.16.101.146:5999/pantalon");
       let pantsData = await pantsRes.json();
       
       let combinedData = ordersData.map(order => {
