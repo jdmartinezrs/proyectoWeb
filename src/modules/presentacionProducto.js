@@ -4,8 +4,8 @@ import "./complementoCarritos.js"
 class infoProducto extends LitElement {
   static styles = css`
     :host{
-      width: 17vw;
-      height: 37vh;
+      width: 19vw;
+      height: 38vh;
       background: var(--color-cuarto);
     }
     .div5_1 {
@@ -14,12 +14,16 @@ class infoProducto extends LitElement {
       display: flex;
       flex-direction: column;
       align-items: center;
+      
      
     }
 
     .div5_1 img {
       width: 100%;
       height: 100%;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius:10px;
+      
     }
 
     .div5_1_1 {
@@ -28,15 +32,16 @@ class infoProducto extends LitElement {
       background: var(--color-secundario);
       border: 2px solid var(--color-tercero);
       display: flex;
-      border-radius: 1em;
+      border-radius: 10px;
     }
 
     .div5_1_1_p {
-      width: 55%;
+      padding-top:25px;
+      width: 100%;
       height: 100%;
       align-items: center;
-      font-size: .9em;
-      line-height: 2.5em;
+      font-size: 15px;
+      line-height: 20px;
       display:flex;
       flex-direction: column;
       margin-left: .5em;

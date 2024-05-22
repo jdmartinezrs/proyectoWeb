@@ -95,11 +95,5 @@
       "id": "5"
     }
   ],
-  "carrito": [
-    {
-      "id": "1",
-      "cantidad": 1,
-      "abrigoId": "1"
-    }
-  ]
+  "carrito": []
 }

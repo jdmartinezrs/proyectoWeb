@@ -14,7 +14,7 @@ static styles = css `
   padding-left: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 50px;
 }
 
 .card {
@@ -36,13 +36,13 @@ static styles = css `
 
 .product-name {
   color: #333;
-  font-size: 18px;
+  font-size: 13px;
   margin-top: 10px;
 }
 
 .product-price {
   color: var(--clr-white);
-  font-size: 16px;
+  font-size: 21px;
 }
 
 .add-button {

@@ -194,7 +194,7 @@ class MyBodyComponent extends LitElement {
           height:80%;
         }
         .div3_1 {
-          font-size: .8em;
+          font-size: ;
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -236,15 +236,16 @@ class MyBodyComponent extends LitElement {
         .div5_p {
           width: 100%;
           height: 5%;
-          font-size: 1.5em;
+          font-size: 33px;
           padding: 0.8em 0 0em 1em;
+          padding-top: 30px;
           display: flex;
           margin-block-start: 0em;
           margin-block-end: 0em;
         
         }
         .div2_ul_li_p{
-          font-size: 21px;
+          font-size: 5px;
         }
       }
     `;
@@ -267,25 +268,25 @@ class MyBodyComponent extends LitElement {
           <ul class="div2_ul">
             <li class="div2_ul_li" id="todosProductos">
               <button id="btnTodosProductos">
-                <i class='bx bx-closet'></i>
+                <i></i>
                 <p class="div2_ul_li_p">Todos los productos</p>
               </button>
             </li>
             <li class="div2_ul_li" id="abrigos">
               <button id="btnAbrigos">
-                <i class='bx bxs-thermometer' ></i>
+                <i ></i>
                 <p class="div2_ul_li_p">Abrigos</p>
               </button>
             </li>
             <li class="div2_ul_li" id="camisetas">
               <button id="btnCamisetas">
-                <i class='bx bxs-t-shirt'></i>
+                <i ></i>
                 <p class="div2_ul_li_p">Camisetas</p>
               </button>
             </li>
             <li class="div2_ul_li" id="pantalones">
               <button id="btnPantalones">
-                <i class='bx bxs-arch'></i>
+                <i ></i>
                 <p class="div2_ul_li_p">Pantalones</p>
               </button>
             </li>

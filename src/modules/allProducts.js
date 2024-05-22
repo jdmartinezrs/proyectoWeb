@@ -60,7 +60,7 @@ export class AllProducts extends LitElement {
 
         .product-name {
             color: #333;
-            font-size: 18px;
+            font-size: 10px;
             margin-top: 10px;
         }
 

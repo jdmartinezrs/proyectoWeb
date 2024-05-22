@@ -9,6 +9,7 @@ class MyElement extends LitElement {
   static styles = css`
     :host {
       display: block;
+      
     }
     .product-list {
       width: 95%;

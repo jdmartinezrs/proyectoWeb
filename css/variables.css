@@ -1,10 +1,9 @@
 :root{
-    --color-primario: #77c8e0;
-    --color-secundario: #434982;
-    --color-tercero: #003285;
+    --color-primario: lightslategray ;
+    --color-secundario: rgb(11, 196, 210);
+    --color-tercero:#ffffffb7;
     --color-cuarto: #ffffffb7;
     --color-menu: #FFE8C8;
-    --color-quinto: #228B22;
-    --color-cancel: #EE4E4E;
-    --color-accept: #7ABA78;
+    --color-quinto: lightslategray;
+  
 }

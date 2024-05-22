@@ -34,7 +34,7 @@ class MyElement extends LitElement {
     justify-content: center;
   }
   .vaciarCarrito_1 p {
-    font-size: 1.5em;
+    font-size: 15px;
   }
 
   .comprarCarrito {
@@ -123,8 +123,12 @@ class MyElement extends LitElement {
       gap: 10px;
     }
     .total p {
-      font-size: 1em;
+      font-size: 15px;
     }
+  }
+
+  .icon{
+    font-size: 10px;
   }
 
   `;
@@ -283,9 +287,11 @@ class MyElement extends LitElement {
     this.compraCompletada();
   }
 
+ 
+
   render() {
     return html`
-      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" class = "icon" />
       <div class="product-list" @delete-product="${this.handleDeleteProduct}">
         ${this.products.map(
           (product) => html`
@@ -311,7 +317,7 @@ class MyElement extends LitElement {
             $ ${this.getTotal()}
           </p>
           <button class="comprarCarrito" @click="${this.handleComprar}">
-            <p style="font-size: 1.5em;">Comprar</p>
+            <p style="font-size: 15px;">Comprar</p>
           </button>
         </div>
       </div>
